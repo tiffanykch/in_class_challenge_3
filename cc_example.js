@@ -10,7 +10,7 @@ function findOrder(orders, orderId) {
     return orders.find(order => order.id === orderId);
 }
 
-// console.log(findOrder(orders, 102));
+console.log(findOrder(orders, 102));
 
 // TASK 6 
 
@@ -31,13 +31,13 @@ let inventory = {
 inventory.addItem("Monitor", 5);
 inventory.addItem("Keyboard", 10);
 inventory.addItem("Mouse", 3)
-// console.log(JSON.stringify(inventory.items));
+console.log(JSON.stringify(inventory.items));
 
-// inventory.removeLatestItem()
-// console.log(JSON.stringify(inventory.items));
+inventory.removeLatestItem()
+console.log(JSON.stringify(inventory.items));
 
-// inventory.removeFirstItem()
-// console.log(JSON.stringify(inventory.items));
+inventory.removeFirstItem()
+console.log(JSON.stringify(inventory.items));
 
 // TASK 7
 
@@ -64,3 +64,9 @@ function mergeOrders(orderA, orderB) {
 }
 
 console.log(mergeOrders(orders1, orders2))
+
+// EXTRA
+
+let employee = {name: "Alice", position: "Developer", salary: 70000.1234}
+
+console.log(`${employee.name} is a ${employee.position} and makes $${employee.salary.toFixed(2)}.`)
